@@ -26,3 +26,5 @@ const internet2 = {
     }
   ]
 }
+
+module.exports = internet2

@@ -117,10 +117,7 @@ Skipped: ["http://foo.bar.com/p1"]
 Error: []
 ```
 
-web-crawler-project[2].md
-Displaying web-crawler-project[2].md.
-
-/\* Pseudo Code
+### My Pseudo Code:
 
 - declare five arrays: availableAddresses, waiting, success, skipped,
   and error
@@ -151,5 +148,3 @@ in webCrawler()...
 - push the first page object address string from data argument to
   success array
 - run linkProcessor() on array of links from first page object
-
-\*/

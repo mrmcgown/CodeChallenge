@@ -34,3 +34,5 @@ const internet1 = {
     }
   ]
 }
+
+module.exports = internet1
