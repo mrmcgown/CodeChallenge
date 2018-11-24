@@ -119,3 +119,37 @@ Error: []
 
 web-crawler-project[2].md
 Displaying web-crawler-project[2].md.
+
+/\* Pseudo Code
+
+- declare five arrays: availableAddresses, waiting, success, skipped,
+  and error
+- declare two functions: webCrawler(data) with a nested function,
+  linkProcessor(link)
+
+in linkProcessor()...
+
+- set waiting array equal to empty array
+- iterate through array of links and for each link...
+  - if link does not match any item from availableAddresses
+    array, push it to error array
+  - else if link matches any item from success array, but does
+    not exist in skipped array, push it to skipped array
+  - else if link matches any item from availableAddresses array,
+    but not success array, push it to success array and waiting array
+  - else do nothing
+- iterate through the waiting array and for each item...
+  - run linkProcessor() with an argument of the links array of the
+    item in the pages array with an address matching the item
+    internet1.pages.
+
+in webCrawler()...
+
+- iterate through array of pages from the data argument
+  - for each item in array of pages, push each address string to
+    availableAddresses array
+- push the first page object address string from data argument to
+  success array
+- run linkProcessor() on array of links from first page object
+
+\*/
